@@ -1,1 +1,3 @@
-# Html-Snake-Game
+<!DOCTYPE html>
+<html>
+<head>
