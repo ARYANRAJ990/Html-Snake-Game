@@ -1,3 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Snake Game</title>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
