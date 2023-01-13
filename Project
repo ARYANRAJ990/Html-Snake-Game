@@ -25,3 +25,16 @@
 	top:10px;
   }
     #p2
+    {
+    color:red;
+	position:absolute;
+	left:100px;
+	top:30px;
+  }
+  #score
+  {
+    color:yellow;
+    position:absolute;
+	left:155px;
+	top:10px;
+  }
