@@ -52,3 +52,13 @@
 	  left:100px;
 	  top:80px;
   }
+  #end_msg
+  {
+    color:brown;
+    position:absolute;
+	  left:100px;
+	  top:100px;
+  }
+  </style>
+</head>
+<body>
