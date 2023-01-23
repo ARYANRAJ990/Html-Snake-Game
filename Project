@@ -124,3 +124,7 @@ function loop() {
   else if (snake.x >= canvas.width) {
     snake.x = 0;
   }
+  // wrap snake position vertically on edge of screen
+  if (snake.y < 0) {
+    snake.y = canvas.height - grid;
+  }
