@@ -128,3 +128,12 @@ function loop() {
   if (snake.y < 0) {
     snake.y = canvas.height - grid;
   }
+ else if (snake.y >= canvas.height) {
+    snake.y = 0;
+  }
+  // keep track of where snake has been. front of the array is always the head
+  snake.cells.unshift({x: snake.x, y: snake.y});
+  // remove cells as we move away from them
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();
+  }
