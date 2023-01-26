@@ -143,3 +143,13 @@ function loop() {
   // draw snake one cell at a time
   context.fillStyle = 'green';
   snake.cells.forEach(function(cell, index) {
+  // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
+    context.fillRect(cell.x, cell.y, grid-1, grid-1);  
+    // snake ate apple
+    if (cell.x === apple.x && cell.y === apple.y) {
+      snake.maxCells++;
+	  score+=1;
+    //saving score for next playing.
+    localStorage.setItem('score',score);
+	  //max=score;
+	  document.getElementById('score').innerHTML=score;
