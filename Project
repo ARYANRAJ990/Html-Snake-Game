@@ -200,3 +200,25 @@ document.addEventListener('keydown', function(e) {
     snake.dy = -grid;
     snake.dx = 0;
   }
+  // right arrow key
+  else if (e.which === 39 && snake.dx === 0) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  // down arrow key
+  else if (e.which === 40 && snake.dy === 0) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+});
+// start the game
+requestAnimationFrame(loop);
+
+
+
+
+function myFunction() {
+  document.getElementById('end_msg').innerHTML="";
+  alert('Press confirm to continue');
+}
+
