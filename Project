@@ -221,4 +221,15 @@ function myFunction() {
   document.getElementById('end_msg').innerHTML="";
   alert('Press confirm to continue');
 }
+//stop playing
+$(document).ready(function(){
+		$('#btn_stop').click(function(){
+      document.getElementById('end_msg').innerHTML="Game stoped by player" ;
+      setTimeout(myFunction, 1000);	
+		});
+	});
+
+</script>
+</body>
+</html>
 
